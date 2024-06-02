@@ -6,7 +6,7 @@ const MoodInput = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const url = "http://localhost:5001/api/mood";
+    const url = "http://localhost:5001/api/entry";
     try {
       const res = await fetch(url, {
         method: "POST",
