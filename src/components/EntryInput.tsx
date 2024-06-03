@@ -18,7 +18,6 @@ const EntryInput = () => {
       if (token) {
         headers["x-auth-token"] = String(token);
       }
-
       const res = await fetch(url, {
         method: "POST",
         headers,
