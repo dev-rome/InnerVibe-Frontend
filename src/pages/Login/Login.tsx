@@ -1,6 +1,7 @@
 import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import AuthContext from "../../context/AuthContext";
+import styles from "./Login.module.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -34,34 +35,38 @@ const Login = () => {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    <div className={styles.loginContainer}>
+      <form onSubmit={handleSubmit} className={styles.loginForm}>
         <h2>Login</h2>
-        {error && <p>{error}</p>}
-        <p>
-          Don't have a account yet?
-          <a href="/signup">Sign Up</a>
-        </p>
-        <label>
-          Email Address
+        {error && <p className={styles.error}>{error}</p>}
+        <label className={styles.label}>
+          Email
           <input
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
+            className={styles.input}
           />
         </label>
 
-        <label>
+        <label className={styles.label}>
           Password
           <input
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
+            className={styles.input}
           />
         </label>
-        <button type="submit">Login</button>
+        <button type="submit" className={styles.button}>
+          Login
+        </button>
+        <p className={styles.signupPrompt}>
+          Don't have a account yet?
+          <a href="/signup">Sign Up</a>
+        </p>
       </form>
     </div>
   );
