@@ -60,9 +60,11 @@ const Login = () => {
             className={styles.input}
           />
         </label>
+
         <button type="submit" className={styles.button}>
           Login
         </button>
+
         <p className={styles.signupPrompt}>
           Don't have a account yet?
           <a href="/signup">Sign Up</a>
