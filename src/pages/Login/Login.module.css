@@ -2,7 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: hsl(210, 17%, 98%);
+  background: linear-gradient(
+    145deg,
+    rgb(168, 230, 207),
+    rgb(86, 184, 112),
+    rgb(129, 212, 250)
+  );
   height: 100vh;
 }
 
@@ -39,17 +44,17 @@
 }
 
 .button {
-  background-color: hsl(275, 86%, 36%);
+  background-color: hsl(173, 100%, 24%);
   color: hsl(0, 0%, 100%);
   border: none;
   padding: 0.625rem 1.25rem;
   cursor: pointer;
   width: 100%;
-  transition: all 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 .button:hover {
-  background-color: hsl(275, 83%, 50%);
+  background-color: hsl(170, 100%, 15%);
 }
 
 .signupPrompt {
@@ -60,7 +65,7 @@
 }
 
 .signupPrompt a {
-  color: hsl(275, 86%, 36%);
+  color: hsl(120, 46%, 26%);
   text-decoration: none;
   font-weight: bold;
   margin-left: 0.2rem;
