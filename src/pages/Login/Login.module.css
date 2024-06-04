@@ -56,7 +56,7 @@
   text-align: center;
   margin-top: 1.25rem;
   font-size: 0.75rem;
-  color: #333333;
+  color: hsl(0, 0%, 20%);
 }
 
 .signupPrompt a {
