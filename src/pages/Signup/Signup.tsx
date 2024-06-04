@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styles from "./Signup.module.css";
 
 const Signup = () => {
@@ -75,7 +75,7 @@ const Signup = () => {
 
         <p className={styles.loginPrompt}>
           Already have an account?
-          <a href="/login">Login</a>
+          <Link to="/login">Login</Link>
         </p>
       </form>
     </div>

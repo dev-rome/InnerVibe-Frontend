@@ -1,5 +1,5 @@
 import { useState, useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import AuthContext from "../../context/AuthContext";
 import styles from "./Login.module.css";
 
@@ -67,7 +67,7 @@ const Login = () => {
 
         <p className={styles.signupPrompt}>
           Don't have a account yet?
-          <a href="/signup">Sign Up</a>
+          <Link to="/signup">Sign Up</Link>
         </p>
       </form>
     </div>
